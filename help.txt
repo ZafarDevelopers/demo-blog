@@ -1,0 +1,4 @@
+Hi guise!
+I want to create a blog project by Django, but I’m getting error while clicking the Edit Now after reading the post details. I guess there is no error in the code, which I wrote for this project, the error, which I’m getting, is described in the photo, which is in the zip file above, and all the code is also in that zip file.
+Will you help me to fix it?
+I’ll be grateful to you.
