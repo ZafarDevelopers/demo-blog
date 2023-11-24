@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ edit }}
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'posts' %}">Back to post list</a>
+</body>
+</html>

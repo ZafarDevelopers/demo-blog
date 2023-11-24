@@ -1,0 +1,26 @@
+<html>
+<body>
+
+{% extends "master.html" %}
+
+{% block title %}
+  myBlog-details about {{ post.title }}
+{% endblock %}
+
+{% block content %}
+
+  <h1> details about {{ post.title }} </h1>
+  <p> published on: {{ post.datePosted }} </p>
+  <p> author of this post: {{ post.author }} </p>
+  <h2> post content </h2>
+  <p> {{ post.content }} </p>
+  <button onclick="{{ copy }}> </button>
+  <p> want to edit your post? <a href="editPost/{{ post.id }}"> Edit Now </a> </p>
+
+  <p> back to <a href="/posts"> POSTS </a> </p>
+
+
+{% endblock %}
+
+</body>
+</html>

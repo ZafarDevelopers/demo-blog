@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<p> back to <a href="/"> HOME </a> </p>
+
+{% extends "master.html" %}
+
+{% block title %}
+  myBlog-list of all posts
+{% endblock %}
+
+{% block content %}
+  <h1> myBlog-list of all posts </h1>
+
+  {% for x in post %}
+
+    <a href="postDetails/{{ x.id }}">{{ x.title }} </a>
+  {% endfor %}
+
+  <p> want to post on our blog? <a href="newPost/"> Create Post </a> </p>
+
+{% endblock %}
+
+
+
+</body>
+</html>
