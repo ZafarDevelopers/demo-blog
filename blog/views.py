@@ -12,9 +12,7 @@ def posts(request):
 
 def postDetails(request, id):
   post = Post.objects.get(id=id)
-  text=str(post)
-  copy= pyperclip.copy(text)
-  return render(request, "postDetails.html", {"post": post}, {"copy": copy})
+  return render(request, "postDetails.html", {"post": post})
 
 def newPost(request):
   context={}
